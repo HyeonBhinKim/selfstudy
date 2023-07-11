@@ -1,0 +1,69 @@
+.container {
+
+}
+
+.container .heroes {
+    /* 수평정렬 */
+    display: flex;
+
+    /* 페이지에 맞춰서 줄바꿈 */
+    flex-wrap: wrap;
+
+    /* 가운데 정렬 */
+    justify-content: center;
+    background-color: orange;
+
+    /* width만 쓰면 줄어들어도 반응을 안하는데 max같이 쓰면 줄어들 때 같이 줌 */
+    max-width: 700px;
+
+    /* 마진 auto할때 블록의 좌우가 있으면 가운데 정렬댐 */
+    margin: auto;
+
+    /* 위아래 40,  좌우 20 */
+    padding: 40px 20px;
+}
+
+.container .heroes .hero {
+    width: 80px;
+    height: 84px;
+    margin: 4px;
+    background-color: #555;
+
+    /* 테두리 라인 */
+    border: 3px solid #fff;
+    /* 테두리 깎기 */
+    border-radius: 10px;
+    /* 보더를 사용하면 대상의 픽셀이 보더라인만큼 커지니까 대상의 크기를 제한하기 위해서 사용 */
+    /* 보더가 들어간 만큼 커지지 않음 */
+    box-sizing: border-box;
+
+    /* 대상 기울임 추가 */
+    transform: skewX(-14deg);
+
+    /* 호버 했을때 모양 자연스럽게 바꾸기 위해서 */
+    /* 그리고 각 속성마다 바꾸는 시간 설정 */
+    transition:
+      transform .1s,
+      background-color 1s;
+}
+
+/* 영웅위에 마우스 올라갔을 때 hover기능을 이용 */
+.container .heroes .hero:hover {
+    /* 색 바꿈 */
+    background-color: #ff9c00;
+
+    /* scale로 크기 바꿈 */
+    /* 그런데 전에 transform에 skewX로 기울임을 만들어 뒀는데 재설정하니까 기울임이 없어짐*/
+    transform: skewX(-14deg) scale(1.3);
+
+    /* 형제요소에 가려지니까 가장앞으로 보여지기 위해서 */
+    z-index: 1;
+}
+
+.container .heroes .hero .image {
+
+}
+
+.container .heroes .hero:nth-child(1) .image {
+
+}
