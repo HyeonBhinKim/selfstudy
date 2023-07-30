@@ -18,6 +18,8 @@ tabnine AI
 
 eslint
 
+atom dark one
+
 ---
 
 React.memo로
