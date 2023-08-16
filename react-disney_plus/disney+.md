@@ -10,6 +10,18 @@ npm install react-router-dom --save
 
 - 리액트 라우터 돔 설치
 
+npm install swiper --save
+
+- 스크롤 스와이퍼
+
+npm install firebase
+
+- 파이어베이스 설치 - firebase.google 앱등록
+
+- https://firebase.google.com/docs/auth/web/google-signin#handle_the_sign-in_flow_with_the_firebase_sdk
+
+- 파이어베이스로 로그인할때 설정
+
 useStateSnippet
 
 - 유즈스테이트 스니펫
@@ -21,6 +33,10 @@ rafce
 npm install --save styled-components
 
 - 스타일드 컴포넌트 - 리액트에서 좀더 수월하게 css
+
+npm install --save react-speech-recognition
+
+- STT 설치
 
 atom dark one 테마
 

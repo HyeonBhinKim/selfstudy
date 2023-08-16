@@ -4,7 +4,7 @@ import "./Row.css";
 import MovieModal from './MovieModal';
 
 
-const Row = ({title, id, fetchUrl}) => {
+const Row = ({title, id, fetchUrl}) => { // MainPage에서 prop 넘겨준거임
   const [movies, setMovies] = useState([])  // 영화는 여러개니까 배열로 받기위해서 State안에 [] 배열로 적어줌
   const [modalOpen, setModalOpen] = useState(false);
   const [movieSelected, setMovieSelected] = useState({})

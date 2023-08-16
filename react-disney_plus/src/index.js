@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
+import app from './firebase'; // 이렇게만 해둬도 연결된거임
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
